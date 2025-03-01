@@ -1,0 +1,25 @@
+<html>
+<body>
+<canvas width="600" height="600"></canvas>
+<script>
+
+	let canvas = document.querySelector('canvas');
+	let context = canvas.getContext('2d');
+  
+
+    for (let i=0;i<10;i++) {
+
+    	let width = 60;
+    	let height = 60;
+    	let gap = 20;
+    	let x = 100 + (width + gap) * i ;
+    	let y = 100;
+
+    	context.beginPath();
+    	context.rect(x,y,width,height);
+    	context.stroke();
+    }
+	
+</script>
+</body>
+</html>
